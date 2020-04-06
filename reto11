@@ -1,0 +1,35 @@
+#include<iostream>
+#include<vector>
+
+using namespace std;
+
+int solution(int A,int B, int C){
+
+int contador = 0;
+
+for(int i = A; i<= B; i++){
+
+    if(i%C == 0){
+        contador = contador +1;
+    }
+
+}
+
+return contador;
+
+}
+
+int main(){
+    int A,B,K,resultado = solution(A,B,C);
+
+    cout << "Parcero, dame valor A" <<endl;
+    cin >> A;
+
+    cout << "Parcero, dame valor B" <<endl;
+    cin >> B;
+
+    cout << "Parcero, dame valor C" <<endl;
+    cin >> C;
+
+   cout << "Parcero, dame resultado:" <<resultado <<endl;
+}
